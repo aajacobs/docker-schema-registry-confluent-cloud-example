@@ -5,6 +5,7 @@ version: '2'
 services:
   schema-registry:
     container_name: schema-registry
+    env_file: ./.env
     ports:
       - "8081:8081"
     image:  confluentinc/cp-schema-registry:latest  
